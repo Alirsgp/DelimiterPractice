@@ -9,7 +9,7 @@ public class PracticeDelimiter {
 
 		try {
 		uploadedFile = new Scanner(myFile);
-		uploadedFile.useDelimiter("/|#|%");
+		uploadedFile.useDelimiter("/|#|%|//n| ");
 
 		} catch(Exception ex) {
 			System.out.println("File not found!");
@@ -18,6 +18,9 @@ public class PracticeDelimiter {
 		String myText = uploadedFile.next();
 		System.out.print(myText);
 		System.out.print(" ");
-			} 
+			}
+
+		System.out.println(); 
 		}
+
 	}
